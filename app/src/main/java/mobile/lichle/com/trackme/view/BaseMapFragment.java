@@ -52,6 +52,14 @@ public abstract class BaseMapFragment extends Fragment implements OnMapReadyCall
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        if(null != mFloatButtonVisibility){
+            mFloatButtonVisibility.setFloatButtonVisibility(false);
+        }
+    }
+
+    @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.setMaxZoomPreference(Constants.MAP_MAX_ZOOM_LEVEL);
