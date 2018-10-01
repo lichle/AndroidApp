@@ -34,4 +34,5 @@ ext{
     roomVersion = "1.1.1"
     recyclerViewVersion = "26.1.0"
     robolectricVersion = "3.8"
+    googleTruthVersion = "0.42"
 }

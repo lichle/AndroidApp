@@ -16,6 +16,9 @@ import org.robolectric.shadows.ShadowApplication;
 import mobile.lichle.com.trackme.AssertUtils;
 import mobile.lichle.com.trackme.R;
 
+import static com.google.common.truth.Truth.assertThat;
+
+
 /**
  * Created by lichvl.dp on 10/1/2018.
  */
@@ -43,12 +46,18 @@ public class MainActivityTest {
     }
 
     @Test
-    public void testProcessNextStepWhenLocationPermissionIsGranted() {
+    public void shouldProcessNextStepWhenLocationPermissionIsGranted() {
         String[] permissions = new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
         mApplication.grantPermissions(permissions);
         FloatingActionButton button = mMainActivity.findViewById(R.id.fab);
         button.performClick();
         AssertUtils.assertLogged(Log.DEBUG, "MainActivity", "Location permission is granted", null);
+    }
+
+    @Test
+    public void shouldAppTitleShowAtMainActivityScreen(){
+        assertThat(mMainActivity.getTitle()).isNotNull();
+        assertThat(mMainActivity.getTitle().toString()).isEqualTo(mMainActivity.getString(R.string.app_name));
     }
 
 }
