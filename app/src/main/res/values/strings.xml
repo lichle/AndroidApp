@@ -6,7 +6,7 @@
     <string name="access_location_is_not_granted_warning">Please grant Location Permission to the app first</string>
     <string name="device_not_support_gps">This device does not support GPS</string>
     <string name="device_not_enable_gps_warning">Please enable GPS first</string>
-    <string name="route_info_in_tracking">Waiting for tracking the route is finish...</string>
+    <string name="route_info_in_tracking">Waiting for tracking the route finish...</string>
     <string name="track_saved_successfully">Track has been saved successfully!</string>
     <string name="track_saved_failed"> Save track failed!</string>
     <string name="waiting_for_saving"> Waiting for saving track...</string>
