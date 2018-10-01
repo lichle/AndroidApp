@@ -50,7 +50,6 @@ public class TrackRepository implements TrackDataSource {
     public void saveTrack(@NonNull final TrackEntity entity, final SaveTrack.ResponseValue responseValue) {
         long trackId = mTrackDao.insert(entity);
         responseValue.getTrackEntity().setId(trackId);
-        Log.d("lichne", "count ne");
     }
 
 
