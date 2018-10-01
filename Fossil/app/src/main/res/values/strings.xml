@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Track Me</string>
+    <string name="action_settings">Settings</string>
+    <string name="google_map_api_key">AIzaSyB8gY68zZ0UYuV1sUlyIWoGYjIqIGU7_Tc</string>
+
+    <string name="access_location_is_not_granted_warning">Please grant Location Permission to the app first</string>
+    <string name="device_not_support_gps">This device does not support GPS</string>
+    <string name="device_not_enable_gps_warning">Please enable GPS first</string>
+    <string name="route_info_in_tracking">Waiting for tracking the route is finish...</string>
+    <string name="track_saved_successfully">Track has been saved successfully!</string>
+    <string name="track_saved_failed"> Save track failed!</string>
+    <string name="waiting_for_saving"> Waiting for saving track...</string>
+    <string name="no_track_data"> Don\'t save! No tracking data found</string>
+
+    <string name="no_data_found">No data found</string>
+</resources>
