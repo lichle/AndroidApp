@@ -33,4 +33,5 @@ ext{
     googlePlayServiceVersion = "15.0.1"
     roomVersion = "1.1.1"
     recyclerViewVersion = "26.1.0"
+    robolectricVersion = "3.8"
 }

@@ -32,6 +32,8 @@ import mobile.lichle.com.trackme.utils.DeviceUtils;
 
 public class MainActivity extends BaseActivity implements IFloatButtonVisibility {
 
+    public static final String TAG = "MainActivity";
+
     public static final int PERMISSIONS_REQUEST_ACCESS_LOCATION = 100;
     public static final int REQUEST_LOCATION = 101;
 
@@ -162,7 +164,8 @@ public class MainActivity extends BaseActivity implements IFloatButtonVisibility
                     PERMISSIONS_REQUEST_ACCESS_LOCATION);
 
         } else {
-            // Permission has already been granted
+            // Permission has already been granted, continue check GPS.
+            Log.d(TAG, "Location permission is granted");
             checkGPS();
         }
     }

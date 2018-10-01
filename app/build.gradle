@@ -16,6 +16,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
@@ -34,5 +39,7 @@ dependencies {
     implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
     annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomVersion"
     implementation "com.android.support:recyclerview-v7:$rootProject.recyclerViewVersion"
+
+    testImplementation "org.robolectric:robolectric:$rootProject.robolectricVersion"
 
 }
