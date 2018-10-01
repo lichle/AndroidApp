@@ -7,6 +7,8 @@ Requirements: <b>This project is for interview purpose only. The idea is not min
 
 Coding convention: https://source.android.com/setup/contribute/code-style
 
+Implement Test: JUnit (for Java Core), Robolectric (for Android)
+
 Document is in update...........
 
 Contact me:
