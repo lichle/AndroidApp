@@ -23,6 +23,8 @@ The problem with this Architecture is because in Android, we cannot manage the l
 In my point, Clean Architecture is helpful in the project that requires to change UI a lots. So we are free to revise it without caring the others (database, network, business case,...).  Because the view is the outest layer, so changing the view will not effect or update codes of the other inner layers. Beside some limitations above, I found that clean architecture is quite good, it's not only give you a robust skeleton but also easily to extends and maintenance. As its name, "clean", this architecture is really clean, all components are separated and the communication between them is a clean too. But there is not an architecture that resolve all our problems. Your job is to choose the architecture that is the most suitable for your project, accept its pros and cons, and may be customize its if it give to serve your case better.
 
 
+I will talk about the limitation case of this architecture....... as well as the project, some points to improvement latter
+
 
 Contact me:
 lich.le.swe@gmail.com
