@@ -3,13 +3,11 @@
 Install a mock GPS application to mock up the phone location.<br/>
 For example: https://play.google.com/store/apps/details?id=fr.dvilleneuve.lockito&hl=en <br/>
 
-Requirements: <b>This project is for interview purpose only. The idea is not mine, it's owned by my interviewer, so I wanna keep it confidential.</b> </br>
-
 Coding convention: https://source.android.com/setup/contribute/code-style
 
 Implement Test: JUnit (for Java core), Robolectric (for Android stuff)
 
-Document is in update...........
+
 
 The architecture of the project is MVP-Clean Architecture.
 At the same time, the maximum quantity of running thread is 5 (1 main Thread and 4 background threads). Because I used thread pool in the Iteractor layer (with initialization to 4 threads running in concurrency). The reason is to balance the CPU processing. Although I make a new thread every request to execute data in the repository (as you said in the interview), but the repository is called by the Iterator, and I limited the thread in Iterator to 4 only. The reason is to for reusable, you can import the repository layer to other architectures you want and don’t need to revise the repository codes because it makes sure to run the data task in background thread. In this architecture,  you can even omit making new thread in repository because the thread calls it (created from the Iterator layer: ThreadPoolExecutor.execute()) is already a background thread.
